@@ -1,7 +1,7 @@
 
 #  Prado Landing Page proyecto integrador
 
-Este proyecto consiste en una landing page creada con HTML y CSS, siguiendo los conocimientos adquiridos en el curso y con Docker y Nginx levantamos el servidor.<br>La landing page tiene como objetivo presentar los servicios de una entidad ficticia.
+Este proyecto consiste en una landing page creada con HTML, CSS, JS siguiendo los conocimientos adquiridos levantamos el servidor en: https://pradoconstrucciones.netlify.app/.<br>La landing page tiene como objetivo presentar los servicios de una entidad ficticia.
 
 ## Tecnologías
 Estructura del Proyecto <br>
