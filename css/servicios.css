@@ -1,0 +1,23 @@
+/* Servicios y Proyectos */
+.service-cards,
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap; /* Ajusta la distribución en múltiples filas si es necesario */
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-card,
+.project-item {
+  flex: 1 1 40%; /* Ajusta el ancho y permite que se adapten */
+  margin: 10px;
+  text-align: center;
+}
+
+.service-card img,
+.project-item img {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  object-fit: cover;
+}
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- FOND -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="/index.html"><img src="/images/logo.ico" class="logo_img" alt="logo"></a>
+            </div>
+            <nav class="menu">
+
+                <ul>
+                    <li> <a href="#Sobre_Nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li> <a href="#Nuestros_Servicios">Nuestros Servicios</a>
+                    </li>
+                    <li> <a href="#projects">Proyecto Destacado</a>
+                    </li>
+                    <li> <a href="#contact">Contacto</a>
+                    </li>
+                    <label class="switch">
+                        <input type="checkbox" id="modo-desktop">
+                        <span class="slider"></span>
+                    </label>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+        </header>
+        <nav class="mobile-menu">
+            <ul>
+                <li> <a href="#Sobre_Nosotros">Sobre Nosotros</a>
+                </li>
+                <li> <a href="#Nuestros_Servicios">Nuestros Servicios</a>
+                </li>
+                <li> <a href="#projects">Proyecto Destacado</a>
+                </li>
+                <li> <a href="#contact">Contacto</a>
+                </li>
+                <label class="switch">
+                    <input type="checkbox" id="modo-mobile">
+                    <span class="slider"></span>
+                </label>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Hero Section con imagen destacada -->
+            <section id="hero">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img src="https://www.klicarquitectos.com/wp-content/uploads/construir-una-casa-desde-cero.jpg"
+                                alt="Imagen Principal de la Constructora">
+                            <div class="hero-content">
+                                <h1 class="title">Construimos tus sueños</h1>
+                                <p>Proyectos de calidad y confianza</p>
+                                <a href="#contact" class="cta-button">Solicita una cotización</a>
+                            </div>
+                        </div>
+                        <!-- Add more slides as needed -->
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
+                                alt="Imagen Principal de la Constructora">
+                            <div class="hero-content">
+                                <h1 class="title">Construimos tus sueños</h1>
+                                <p>Proyectos de calidad y confianza</p>
+                                <a href="#contact" class="cta-button">Solicita una cotización</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Swiper Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Add Swiper Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+            <section class="features" id="Sobre_Nosotros">
+                <div class="feature" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-delay="250"
+                    data-aos-offset="0">
+                    <div class="feature-icon"><i class="material-icons">work_history</i></div>
+                    <div>
+                        <h4>Bienvenidos a Prado</h4>
+                        <p>Una empresa dedicada a la construcción y edificación de obra nueva, a la rehabilitación de
+                            edificios, locales comerciales y viviendas y a proyectos integrales de reformas.
+                            Nuestros servicios 360 son el resultado apostar por la calidad ofreciendo el mejor servicio
+                            posible, lo que nos convierte en un referente como empresa de construcción en Córdoba. </p>
+                    </div>
+                </div>
+                <div class="feature" data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-delay="250"
+                    data-aos-offset="0">
+                    <div class="feature-icon"> <i class="material-icons">star_half</i></div>
+                    <div>
+                        <h4>¿Qué tipo de trabajos de construcción podemos realizar?</h4>
+                        <p>
+                            Viviendas unifamiliares y plurifamiliares: Trabajamos en proyectos de obra para viviendas en
+                            Córdoba y poblaciones cercanas.<br>
+                            Fachadas: Mantenimiento y rehabilitaciones de fachadas con la máxima calidad.<br>
+                            Tejados y cubiertas: Ofrecemos servicios para la reconstrucción y reforma de todo tipo de
+                            tejados.</p>
+                    </div>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-delay="250"
+                    data-aos-offset="0">
+                    <div class="feature-icon"><i class="material-icons">system_update_alt</i></div>
+                    <div>
+                        <h4>Otros trabajos</h4>
+                        <p>También trabajamos en proyectos de construcción de apartamentos, chalets, pisos, viviendas
+                            unifamiliares y cualquier otro tipo de trabajos de construcción en Córdoba. Nos adaptamos
+                            sin problema a cualquier tipo de proyecto que nuestros clientes nos planteen. También
+                            trabajamos en proyectos empresariales y comerciales y también de carácter público.
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="acompanamos" id="Nuestros_Servicios">
+                <h2>Te acompañamos en cada paso</h2>
+                <p>Tener un proyecto con Prado Constructora Desarrollista es asegurarte que tu meta se va a cumplir.
+                </p>
+                <div class="features-container">
+                    <div class="feature-compani" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="200" data-aos-offset="0">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <h3>Construimos donde vos estás</h3>
+                        <p>Podrás ingresar a nuestro sistema con o sin lote.</p>
+                    </div>
+                    <div class="feature-compani" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="200" data-aos-offset="0">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <h3>Sistema de construcción tradicional</h3>
+                        <p>El ladrillo y cemento son nuestros mejores aliados: Construimos casas para toda la vida.</p>
+                    </div>
+                    <div class="feature-compani" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="200" data-aos-offset="0">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <h3>Sistema llave en mano</h3>
+                        <p>Nosotros nos encargamos de todo. ¡Tu casa lista para entrar y vivirla!</p>
+                    </div>
+                    <div class="feature-compani" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="200" data-aos-offset="0">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <h3>Amplio catálogo de tipologías</h3>
+                        <p>Tenemos más de 30 tipologías modernas y funcionales.</p>
+                    </div>
+                    <div class="feature-compani" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="200" data-aos-offset="0">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <h3>Aportes fijos, mensuales y en pesos</h3>
+                        <p>Tenemos un sistema de financiación único.</p>
+                    </div>
+                    <div class="feature-compani" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="200" data-aos-offset="0">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <h3>Comenzá el proceso constructivo a partir de los 12, 24 o 36 meses</h3>
+                        <p>Vos elegís cuándo querés programar tu obra.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Proyectos -->
+            <section id="projects">
+                <h2>Proyectos Destacados</h2>
+                <div class="project-gallery">
+                    <div class="project-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="100" data-aos-offset="0">
+                        <img src="https://media.gazetadopovo.com.br/2024/05/16201326/Construtoras-de-confianC3A7a-sC3A3o-formadas-por-profissionais-especializados-e-comprometidos-960x540.jpg"
+                            alt="Proyecto 1">
+                        <h4>Residencial Los Robles</h4>
+                    </div>
+                    <div class="project-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="100" data-aos-offset="0">
+                        <img src="https://helbor.blob.core.windows.net/medias/website-institucional/Qual_a_diferenca_entre_construtora_e_incorporadora_Entenda_9c86a40443.jpg"
+                            alt="Proyecto 2">
+                        <h4>Centro Comercial Plaza</h4>
+                    </div>
+                    <div class="project-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="100" data-aos-offset="0">
+                        <img src="https://blog.quadraimob.com.br/wp-content/uploads/2021/03/construtora-e-incorporadora-780x450.jpeg"
+                            alt="Proyecto 3">
+                        <h4>Remodelación Hotel Eco</h4>
+                    </div>
+                </div>
+            </section>
+            <!-- Sección Contacto -->
+            <section id="contact">
+                <h2>Donde nos escontramos</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.815088566865!2d-64.18741492362575!3d-31.39166179505802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298678b7d6461%3A0xf705f399f40ffc54!2sPlaza%20Rivadavia!5e0!3m2!1ses!2sar!4v1725652484409!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </section>
+        </main>
+
+        <footer>
+
+            <div class="container__footer">
+                <div class="box__footer">
+                    <div class="logo">
+                        <img src="/images/logo.ico" alt="">
+                    </div>
+                    <div class="terms">
+                        <p>Una empresa dedicada a la construcción y edificación de obra nueva, a la rehabilitación de
+                            edificios, locales comerciales y viviendas y a proyectos integrales de reformas.
+                            Nuestros servicios 360 son el resultado apostar por la calidad ofreciendo el mejor servicio
+                            posible, lo que nos convierte en un referente como empresa de construcción en Córdoba. </p>
+                    </div>
+                </div>
+                <div class="box__footer">
+                    <h2>Soluciones</h2>
+                    <a href="#">Inteligentes</a>
+                    <a href="#">Inovadoras</a>
+                    <a href="#">Especialistas</a>
+                    <a href="#">Desarrollo</a>
+                </div>
+
+                <div class="box__footer">
+                    <h2>Compañia</h2>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Trabajos</a>
+                    <a href="#">Procesos</a>
+                    <a href="#">Servicios</a>
+                </div>
+
+                <div class="box__footer">
+                    <h2>Redes Sociales</h2>
+                    <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+
+            </div>
+
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados ©<b>Prado</b>
+                <p id="datetime"></p>
+                </p>
+
+            </div>
+        </footer>
+
+    </div>
+    <!-- SCRIPT JS -->
+    <script src="/js/burger_menu.js"></script>
+    <script src="/js/change_titulo.js"></script>
+    <script src="/js/dark_mode.js"></script>
+    <script src="/js/timer.js"></script>
+    <script src="/js/go_top.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/carrousel.js"></script>
+
+</body>
+
+</html>

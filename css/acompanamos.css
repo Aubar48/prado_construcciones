@@ -1,0 +1,41 @@
+/* Acompañamos */
+.acompanamos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.feature-compani {
+  flex: 1 1 calc(33% - 40px);
+  background-color: #a5c8ee;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feature .material-icons {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.feature-compani span {
+  color: #1054ae;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+/* Sobre nosotros */
+#about {
+  padding: 50px 20px;
+  background-color: var(--background);
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}

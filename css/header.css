@@ -1,0 +1,135 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #343f44;
+  font-size: 25px;
+}
+
+.logo_img {
+  width: 120px;
+  height: auto;
+}
+
+.menu {
+  color: #343f44;
+  margin-left: 100px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul a {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.outline-button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #2e86fd;
+  color: #2e86fd;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilos específicos para el menú hamburguesa y menú móvil */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #343f44;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  backgrcolor: #bddbf8;
+  padding: 10px;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.logo_img {
+  filter: drop-shadow(1px 1px 5px #2e2e2f);
+}
+
+/* Secciones */
+#about,
+#services,
+#projects,
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Estilos para el interruptor */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e86fd;
+  border-radius: 24px;
+  transition: background-color 0.4s ease;
+}
+
+slider::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.4s ease;
+}
+
+input:checked + .slider {
+  background-color: #fa593c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 10px #4e4061;
+}
+
+input:checked + .slider::before {
+  transform: translateX(8px);
+}

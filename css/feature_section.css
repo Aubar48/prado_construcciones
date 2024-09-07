@@ -1,0 +1,31 @@
+/* Cards features */
+.features {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.feature {
+  display: flex;
+  flex: 1 1 calc(33% - 40px);
+  align-items: start;
+  gap: 20px;
+  width: 200px;
+  margin: 20px;
+  border-radius: 0px 40px 40px 40px;
+  background-color: #a5c8ee;
+}
+
+.feature h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+.feature i {
+  font-size: 50px;
+  color: #1054ae;
+}

@@ -1,0 +1,132 @@
+
+/* Hero Section */
+#hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#hero img {
+  width: 100%;
+  height: auto; /* Cambia la altura para que sea automática */
+  object-fit: cover;
+  max-height: 600px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 24px;
+}
+
+.cta-button {
+  background-color: #f04;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.presentation {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pre-title {
+  color: #6f7880;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+.hero-content h1 {
+  color: #343f44;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #2e86fd; /* Efecto de cursor */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.hero-content p{
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+/* Animación de escritura */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+/* Animación de parpadeo del cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fa593c;
+  }
+}
+
+
+
+.post-title {
+  color: #6f7880;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+
+.subscribe-form input {
+  width: 50%;
+  height: 40px;
+  border: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #a3a3a5;
+}
+
+.subscribe-form button {
+  width: 30%;
+  height: 42px;
+  border: none;
+  background-color: #fa593c;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+.secondary-p {
+  color: #a3a3a5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+

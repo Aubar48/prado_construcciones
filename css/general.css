@@ -1,0 +1,40 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Variables para modo claro y oscuro */
+:root {
+    --background: #f4f4f9;
+    --text: #333;
+    --primary-color: #4CAF50;
+    --accent-color: #ffc107;
+    --border-color: #e0e0e0;
+}
+
+.dark-mode {
+    --background: #121212;
+    --text: #f4f4f9;
+    --primary-color: #76c7c0;
+    --accent-color: #ff9800;
+    --border-color: #444;
+}
