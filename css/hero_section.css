@@ -1,11 +1,9 @@
-
 /* Hero Section */
 #hero {
   position: relative;
   text-align: center;
   color: white;
 }
-
 #hero img {
   width: 100%;
   height: auto; /* Cambia la altura para que sea automática */
@@ -28,8 +26,6 @@
 .hero-content p {
   font-size: 24px;
 }
-
-
 .cta-button {
   background-color: #f04;
   color: white;
@@ -57,34 +53,16 @@
   transform: rotate(45deg);
   transition: all 0.6s ease-in-out;
 }
-
 /* Hover: el brillo se desplaza por el botón */
 .cta-button:hover::before {
   top: 100%;
   left: 100%;
 }
-
 /* Efecto al presionar el botón */
 .cta-button:active {
   transform: scale(0.95);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-
-
-.presentation {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pre-title {
-  color: #6f7880;
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 700;
-}
-
 
 .hero-content h1 {
   color: #343f44;
@@ -96,7 +74,7 @@
   border-right: 0.15em solid #2e86fd; /* Efecto de cursor */
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-.hero-content p{
+.hero-content p {
   font-size: 40px;
   margin-bottom: 5px;
 }
@@ -116,39 +94,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: #004AAD;
+    border-color: #004aad;
   }
 }
-
-
-
-.post-title {
-  color: #6f7880;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 0 50px;
-  margin-bottom: 30px;
-  display: block;
-}
-
-
-.subscribe-form input {
-  width: 50%;
-  height: 40px;
-  border: none;
-  padding-right: 30px;
-  padding-left: 30px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #a3a3a5;
-}
-
-
-.secondary-p {
-  color: #a3a3a5;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-
-

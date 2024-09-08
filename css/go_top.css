@@ -1,10 +1,10 @@
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 2rem;
+    bottom: 1rem;
     left: 1rem;
     z-index: 99;
-    font-size: 18px;
+    font-size: 10px;
     border: none;
     outline: none;
     background-color:#1054ae;

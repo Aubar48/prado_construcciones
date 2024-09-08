@@ -2,69 +2,28 @@ body.noche {
   background-color: #2e2e2e;
   color: #f5f5f5;
 }
-body.noche .logo {
+body.noche .logo,
+body.noche .hamburger-menu,
+body.noche .mobile-menu ul li a,
+body.noche .menu,
+body.noche .menu ul a,
+body.noche .feature h4,
+body.noche .feature-compani h3 {
   color: #f5f5f5;
 }
 body.noche .logo i {
   color: #fa593c;
 }
-body.noche .logo_img{
-  filter: drop-shadow(1px 1px 5px #ecebee);
-
-}
-body.noche .hamburger-menu {
-  color: #f5f5f5;
-}
-
-body.noche .mobile-menu ul li a {
-  color: #f5f5f5;
-}
-
-body.noche .menu {
-  color: #f5f5f5;
-}
-
-body.noche .menu ul a {
-  color: #f5f5f5;
-}
+body.noche .logo_img,
+body.noche .slider,
 body.noche .menu ul a,
 body.noche .menu ul a {
-  filter: drop-shadow(1px 1px 2px #ecebee);
-}
-body.noche .outline-button {
-  border-color: #fa593c;
-  color: #fa593c;
-}
-
-body.noche .pre-title {
-  color: #cccccc;
-}
-body.noche .presentation h1 {
-  color: #f5f5f5;
-  border-right-color: #fa593c; /* Efecto de cursor */
-}
-
-body.noche .post-title {
-  color: #cccccc;
-}
-
-body.noche .subscribe-form button {
-  background-color: #2e86fd;
-}
-
-body.noche .secondary-p {
-  color: #cccccc;
+  filter: drop-shadow(1px 1px 5px #ecebee);
 }
 
 body.noche .feature,
 body.noche .feature-compani {
   background-color: #333333;
-}
-
-
-body.noche .feature h4,
-body.noche .feature-compani h3 {
-  color: #f5f5f5;
 }
 
 body.noche .feature p,
@@ -77,10 +36,7 @@ body.noche .material-symbols-outlined {
   color: #fa593c;
 }
 
-
-
 body.noche footer {
   color: #f5f5f5;
   background-color: #2e2e2e;
-
 }
