@@ -15,32 +15,85 @@ header {
   width: 120px;
   height: auto;
 }
-
-.menu {
-  color: #343f44;
-  margin-left: 100px;
-}
-
+/* Estilo para el menú */
 .menu ul {
   list-style-type: none;
   display: flex;
   align-items: center;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-right: 30px;
+  position: relative;
 }
 
 .menu ul a {
-  margin-right: 30px;
   font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
+  color: #343f44;
+  position: relative;
+  padding: 10px 30px;
+  display: inline-block;
 }
 
-.outline-button {
-  padding: 10px 15px;
-  background-color: transparent;
-  border: 2px solid #2e86fd;
-  color: #2e86fd;
-  font-weight: bold;
-  cursor: pointer;
+/*efecto button menu*/
+.menu ul a::before,
+.menu ul a::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: #004AAD;
+  filter: drop-shadow(1px 1px 2px #2e2e2f);
+  transition: all 0.4s ease;
+}
+
+.menu ul a::before {
+  top: 0;
+  left: 0;
+}
+
+.menu ul a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.menu ul a span::before,
+.menu ul a span::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 24px;
+  background-color: #004AAD;
+  transition: all 0.4s ease;
+}
+
+.menu ul a span::before {
+  top: 0;
+  right: 0;
+}
+
+.menu ul a span::after {
+  bottom: 0;
+  left: 0;
+}
+
+.menu ul a:hover::before {
+  width: 100%;
+}
+
+.menu ul a:hover::after {
+  width: 100%;
+}
+
+.menu ul a:hover span::before {
+  height: 100%;
+}
+
+.menu ul a:hover span::after {
+  height: 100%;
 }
 
 /* Estilos específicos para el menú hamburguesa y menú móvil */
@@ -53,11 +106,12 @@ header {
   cursor: pointer;
 }
 
+/* CSS */
 .mobile-menu {
   display: none;
   flex-direction: column;
-  backgrcolor: #bddbf8;
   padding: 10px;
+  pointer-events: auto;
 }
 
 .mobile-menu ul {
@@ -67,8 +121,79 @@ header {
 
 .mobile-menu ul li {
   margin-bottom: 10px;
+  position: relative;
+}
+
+.mobile-menu ul a {
   font-weight: 600;
   text-transform: capitalize;
+  text-decoration: none;
+  color: #343f44;
+  position: relative;
+  padding: 10px 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.mobile-menu ul a::before,
+.mobile-menu ul a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #004AAD;
+  filter: drop-shadow(1px 1px 2px #2e2e2f);
+  transition: all 0.4s ease;
+}
+
+.mobile-menu ul a::before {
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu ul a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.mobile-menu ul a span::before,
+.mobile-menu ul a span::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 24px;
+  background-color: #004AAD;
+  transition: all 0.4s ease;
+}
+
+.mobile-menu ul a span::before {
+  top: 0;
+  right: 0;
+}
+
+.mobile-menu ul a span::after {
+  bottom: 0;
+  left: 0;
+}
+
+.mobile-menu ul a:hover::before,
+.mobile-menu ul a:focus::before {
+  width: 100%;
+}
+
+.mobile-menu ul a:hover::after,
+.mobile-menu ul a:focus::after {
+  width: 100%;
+}
+
+.mobile-menu ul a:hover span::before,
+.mobile-menu ul a:focus span::before {
+  height: 100%;
+}
+
+.mobile-menu ul a:hover span::after,
+.mobile-menu ul a:focus span::after {
+  height: 100%;
 }
 
 .logo_img {
@@ -88,7 +213,7 @@ header {
 .switch {
   position: relative;
   display: inline-block;
-  width: 24px;
+  width: 35px;
   height: 18px;
 }
 
@@ -105,17 +230,17 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #2e86fd;
+  background-color: #004AAD;
   border-radius: 24px;
   transition: background-color 0.4s ease;
 }
 
-slider::before {
+.slider::before {
   position: absolute;
   content: "";
   height: 12px;
   width: 12px;
-  left: 2px;
+  left: 8px;
   bottom: 3px;
   border-radius: 50%;
   background-color: #fff;

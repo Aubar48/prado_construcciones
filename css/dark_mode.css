@@ -15,7 +15,8 @@ body.noche .logo_img{
 body.noche .hamburger-menu {
   color: #f5f5f5;
 }
-body.noche .mobile-menu ul li {
+
+body.noche .mobile-menu ul li a {
   color: #f5f5f5;
 }
 
@@ -25,6 +26,10 @@ body.noche .menu {
 
 body.noche .menu ul a {
   color: #f5f5f5;
+}
+body.noche .menu ul a,
+body.noche .menu ul a {
+  filter: drop-shadow(1px 1px 2px #ecebee);
 }
 body.noche .outline-button {
   border-color: #fa593c;
