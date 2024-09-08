@@ -98,13 +98,56 @@ header {
 
 /* Estilos específicos para el menú hamburguesa y menú móvil */
 .hamburger-menu {
-  display: none;
-  font-size: 30px;
+  display: none; 
   background: none;
   border: none;
-  color: #343f44;
   cursor: pointer;
+  padding: 10px;
+  position: relative;
+  width: 40px; 
+  height: 30px; 
 }
+
+.line {
+  position: absolute;
+  height: 4px; 
+  width: 100%;
+  background-color: #004AAD;
+  filter: drop-shadow(1px 1px 2px #2e2e2f); 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.line1 {
+  top: 0;
+  transform-origin: left center;
+}
+
+.line2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line3 {
+  bottom: 0;
+  transform-origin: left center;
+}
+
+.menu-open .line1 {
+  transform: rotate(45deg);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-open .line2 {
+  opacity: 0;
+}
+
+.menu-open .line3 {
+  transform: rotate(-45deg);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
 
 /* CSS */
 .mobile-menu {

@@ -11,6 +11,9 @@ body.noche .feature h4,
 body.noche .feature-compani h3 {
   color: #f5f5f5;
 }
+body.noche .line{
+  filter: drop-shadow(1px 1px 5px #ecebee);
+}
 
 body.noche .logo_img,
 body.noche .slider,
