@@ -35,6 +35,21 @@
   .box__footer a .fab {
     font-size: 40px;
   }
+  form {
+    max-width: 100%; /* Ocupar todo el ancho disponible en móviles */
+    padding: 15px; /* Espaciado más compacto */
+  }
+  form input[type="email"],
+  form input[type="name"],
+  form textarea {
+    font-size: 14px; /* Texto ligeramente más pequeño */
+    padding: 8px;
+  }
+  form button[type="submit"],
+  form button[type="reset"] {
+    font-size: 14px; /* Botones más pequeños */
+    padding: 8px 16px;
+  }
 }
 
 /* Para pantallas medianas (tablets) */
@@ -66,5 +81,39 @@
     width: 100%;
     max-width: 100%;
     height: 400px;
+  }
+  form {
+    max-width: 600px; /* Aumentar el ancho del formulario para tablets */
+    padding: 25px; /* Un poco más de espacio en tablets */
+  }
+  form input[type="email"],
+  form input[type="name"],
+  form textarea {
+    font-size: 16px; /* Tamaño de texto más grande en tablets */
+    padding: 12px;
+  }
+  form button[type="submit"],
+  form button[type="reset"] {
+    font-size: 16px;
+    padding: 12px 24px; /* Botones más grandes en tablets */
+  }
+}
+
+/* Para pantallas grandes (más de 992px) */
+@media only screen and (min-width: 992px) {
+  form {
+    max-width: 1400px; /* Aumentar el ancho en escritorio */
+    padding: 30px;
+  }
+  form input[type="email"],
+  form input[type="name"],
+  form textarea {
+    font-size: 18px;
+    padding: 15px;
+  }
+  form button[type="submit"],
+  form button[type="reset"] {
+    font-size: 18px;
+    padding: 15px 30px;
   }
 }

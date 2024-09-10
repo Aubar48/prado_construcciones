@@ -1,0 +1,75 @@
+/* Estilos generales del formulario */
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    transition: max-width 0.3s ease; 
+}
+
+/* Estilo de los labels y los campos de entrada */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="email"],
+form input[type="name"],
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: border-color 0.3s ease;
+}
+form textarea {
+    height: 150px;
+    max-height: 300px;
+}
+
+
+/* Cambiar el borde de los campos cuando están enfocados */
+form input[type="email"]:focus,
+form input[type="name"]:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Estilo de los botones */
+form button[type="submit"],
+form button[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para el botón reset */
+form button[type="reset"] {
+    background-color: #6c757d;
+}
+
+form button[type="reset"]:hover {
+    background-color: #565e64;
+}
+
