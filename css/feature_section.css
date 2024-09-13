@@ -13,7 +13,10 @@
   width: 200px;
   margin: 20px;
   border-radius: 0px 40px 40px 40px;
-  background-color: #a5c8ee;
+}
+.feature img{
+  transform: scaleX(-1);
+
 }
 
 .feature h4 {
