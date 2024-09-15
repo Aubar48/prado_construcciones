@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        textarea { width: 100%; height: 300px; }
+        button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Interfaz de Administración</h1>
+    <form id="admin-form">
+        <h2>Contenido JSON</h2>
+        <textarea id="json-content" placeholder="Edita el contenido JSON aquí..."></textarea>
+        <button type="submit">Actualizar Contenido</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/data/content.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('json-content').value = JSON.stringify(data, null, 2);
+                })
+                .catch(error => console.error('Error al cargar el contenido JSON:', error));
+
+            document.getElementById('admin-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const jsonData = document.getElementById('json-content').value;
+
+                fetch('/update-content', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: jsonData,
+                })
+                .then(response => response.text())
+                .then(message => {
+                    alert(message);
+                })
+                .catch(error => console.error('Error al actualizar el contenido:', error));
+            });
+        });
+    </script>
+</body>
+</html>
