@@ -1,8 +1,27 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const basicAuth = require('basic-auth');
+
 const app = express();
 const port = 3000;
+
+// Usuarios y contraseñas
+const users = {
+  'prado': 'Prado48@'  // Cambia 'Prado48@' por una contraseña real
+};
+
+// Middleware de autenticación básica
+function auth(req, res, next) {
+  const user = basicAuth(req);
+
+  if (user && users[user.name] === user.pass) {
+    return next();
+  }
+
+  res.setHeader('WWW-Authenticate', 'Basic realm="Admin Area"');
+  res.sendStatus(401);  // No autorizado
+}
 
 // Servir archivos estáticos
 app.use(express.static(path.join(__dirname)));
@@ -26,12 +45,15 @@ app.post('/update-content', (req, res) => {
   });
 });
 
-// Ruta para servir la página principal
+// Ruta principal
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Ruta para servir la interfaz de administración
+// Aplicar autenticación a la ruta /admin
+app.use('/admin', auth);
+
+// Ruta para servir la interfaz de administración (protegida por autenticación)
 app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'admin.html'));
 });
