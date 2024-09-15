@@ -24,6 +24,8 @@ body.noche .menu ul a {
 
 body.noche .feature-compani {
   background-color: #333333;
+  filter: drop-shadow(1px 1px 5px #cccccc);
+
 }
 
 body.noche .feature img{
