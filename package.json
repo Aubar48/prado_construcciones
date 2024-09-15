@@ -4,7 +4,9 @@
   "description": "Este proyecto consiste en una landing page creada con HTML, CSS, JS siguiendo los conocimientos adquiridos levantamos el servidor en: https://pradoconstrucciones.netlify.app/.<br>La landing page tiene como objetivo presentar los servicios de una entidad ficticia.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+
   },
   "keywords": [],
   "author": "",
