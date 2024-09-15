@@ -5,6 +5,9 @@ footer{
   background-color: #1054ae;
   background-image: url(../Images/background-footer.svg);
   background-size: cover;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px #2e2e2f);
+
   
   /*background-color: #d0f0f8;
   -webkit-mask-image: url("../Images/background-footer.svg");

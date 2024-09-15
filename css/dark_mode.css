@@ -11,7 +11,15 @@ body.noche .feature h4,
 body.noche .feature-compani h3 {
   color: #f5f5f5;
 }
-body.noche .line{
+body.noche .line,
+body.noche footer,
+body.noche #hero img,
+body.noche .project-item img,
+body.noche .service-card img,
+body.noche .service-card iframe,
+body.noche .project-item iframe,
+body.noche #contact iframe,
+body.noche .form-container {
   filter: drop-shadow(1px 1px 5px #ecebee);
 }
 
@@ -25,12 +33,10 @@ body.noche .menu ul a {
 body.noche .feature-compani {
   background-color: #333333;
   filter: drop-shadow(1px 1px 5px #cccccc);
-
 }
 
-body.noche .feature img{
+body.noche .feature img {
   filter: drop-shadow(5px 5px 10px #cccccc);
-
 }
 body.noche .feature p,
 body.noche .feature-compani p {
@@ -46,6 +52,6 @@ body.noche footer {
   color: #f5f5f5;
   background-color: #2e2e2e;
 }
-body.noche #contact form h2{
+body.noche #contact form h2 {
   color: black;
 }
