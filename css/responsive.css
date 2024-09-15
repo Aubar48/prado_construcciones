@@ -57,20 +57,30 @@
   .box__footer a .fab {
     font-size: 40px;
   }
-  form {
-    max-width: 100%; /* Ocupar todo el ancho disponible en móviles */
-    padding: 15px; /* Espaciado más compacto */
+
+  .project-item iframe {
+    height: auto;
   }
-  form input[type="email"],
-  form input[type="name"],
-  form textarea {
-    font-size: 14px; /* Texto ligeramente más pequeño */
-    padding: 8px;
+  .form-container {
+    flex-direction: column; /* Coloca la imagen y el formulario uno encima del otro */
+    height: auto; /* Permite que el contenedor ajuste su altura automáticamente */
   }
-  form button[type="submit"],
-  form button[type="reset"] {
-    font-size: 14px; /* Botones más pequeños */
-    padding: 8px 16px;
+
+  .form-image {
+    flex: 0 0 auto; /* La imagen no ocupará un ancho fijo */
+    height: 200px; /* Ajusta la altura de la imagen para que sea más pequeña en móviles */
+    position: relative; /* Mantiene el posicionamiento del párrafo */
+  }
+  .image-text {
+    top: auto;
+    left: 30px;
+    transform: none; /* Elimina la transformación horizontal */
+    font-size: 0.8rem;
+  }
+
+  .form-content {
+    flex: 0 0 auto; /* El formulario no ocupará un ancho fijo */
+    padding: 20px; /* Reduce el padding para que el formulario se ajuste mejor */
   }
 }
 
@@ -121,20 +131,25 @@
     max-width: 100%;
     height: 400px;
   }
-  form {
-    max-width: 600px; /* Aumentar el ancho del formulario para tablets */
-    padding: 25px; /* Un poco más de espacio en tablets */
+
+  .project-item iframe {
+    height: 450px;
   }
-  form input[type="email"],
-  form input[type="name"],
-  form textarea {
-    font-size: 16px; /* Tamaño de texto más grande en tablets */
-    padding: 12px;
+  .form-container {
+    flex-direction: row; /* La imagen y el formulario estarán uno al lado del otro */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
   }
-  form button[type="submit"],
-  form button[type="reset"] {
-    font-size: 16px;
-    padding: 12px 24px; /* Botones más grandes en tablets */
+
+  .form-image {
+    flex: 0 0 50%; /* La imagen ocupará el 50% del ancho */
+  }
+  .image-text {
+    font-size: 1rem;
+  }
+
+  .form-content {
+    flex: 0 0 50%; /* El formulario ocupará el 50% del ancho */
+    padding: 30px; /* Ajusta el padding para que el contenido se vea bien en tabletas */
   }
 }
 
@@ -147,7 +162,7 @@
   }
   .feature {
     width: 30%;
-    padding:0px 100px;
+    padding: 0px 100px;
     text-align: left;
   }
   .feature img {
@@ -167,19 +182,23 @@
     font-size: 20px;
     line-height: 1.8;
   }
-  form {
-    max-width: 1400px; /* Aumentar el ancho en escritorio */
-    padding: 30px;
+
+  .project-item iframe {
+    height: 600px;
   }
-  form input[type="email"],
-  form input[type="name"],
-  form textarea {
-    font-size: 18px;
-    padding: 15px;
+  .form-container {
+    flex-direction: row; /* La imagen y el formulario estarán uno al lado del otro */
+    height: 100%; /* Ocupa el 100% de la altura disponible */
   }
-  form button[type="submit"],
-  form button[type="reset"] {
-    font-size: 18px;
-    padding: 15px 30px;
+
+  .form-image {
+    flex: 0 0 40%; /* La imagen ocupará el 40% del ancho */
+  }
+  .image-text {
+    font-size: 1.1rem;
+  }
+  .form-content {
+    flex: 0 0 60%; /* El formulario ocupará el 60% del ancho */
+    padding: 40px; /* Mantiene el padding original para pantallas grandes */
   }
 }

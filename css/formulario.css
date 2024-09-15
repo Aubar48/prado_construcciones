@@ -1,16 +1,52 @@
-/* Estilos generales del formulario */
-form {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px; 
+/* Estilos para el contenedor */
+.form-container {
+    display: flex;
+    align-items: stretch; /* Asegura que tanto la imagen como el formulario tengan la misma altura */
+    max-width: 1900px;
     margin: 0 auto;
-    font-family: 'Arial', sans-serif;
-    transition: max-width 0.3s ease; 
+    height: 100%; /* Ocupa el 100% de la altura disponible */
 }
 
-/* Estilo de los labels y los campos de entrada */
+/* Estilo para la imagen */
+.form-image {
+    flex: 0 0 40%; /* La imagen ocupa el 40% del ancho */
+    position: relative; /* Necesario para posicionar el párrafo sobre la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+.form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la relación de aspecto de la imagen dentro del contenedor */
+    border-radius: 8px;
+}
+/* Párrafo sobre la imagen */
+.image-text {
+    position: absolute; /* Posiciona el párrafo sobre la imagen */
+    top: 35%; /* Ajusta la distancia desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el párrafo horizontalmente */
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+/* Estilo para el formulario */
+.form-content {
+    flex: 0 0 60%; /* El formulario ocupa el 60% del ancho */
+    background-color: #f4f4f4;
+    padding: 40px; /* Aumenta el espacio interno (padding) para darle más espacio al contenido */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    transition: max-width 0.3s ease;
+}
+
+/* Ajustes de los inputs y botones */
 form label {
     display: block;
     margin-bottom: 10px;
@@ -22,33 +58,21 @@ form input[type="email"],
 form input[type="name"],
 form textarea {
     width: 100%;
-    max-width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    transition: border-color 0.3s ease;
 }
+
 form textarea {
-    height: 150px;
+    height: 200px;
     max-height: 300px;
 }
 
-
-/* Cambiar el borde de los campos cuando están enfocados */
-form input[type="email"]:focus,
-form input[type="name"]:focus,
-form textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-/* Estilo de los botones */
 form button[type="submit"],
 form button[type="reset"] {
-    background-color: #007BFF;
+    background-color: #1054ae;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -64,7 +88,6 @@ form button[type="reset"]:hover {
     background-color: #0056b3;
 }
 
-/* Estilo específico para el botón reset */
 form button[type="reset"] {
     background-color: #6c757d;
 }
@@ -72,4 +95,3 @@ form button[type="reset"] {
 form button[type="reset"]:hover {
     background-color: #565e64;
 }
-

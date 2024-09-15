@@ -6,6 +6,7 @@
 
 .features-container {
   display: flex;
+  overflow: hidden;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
@@ -13,10 +14,20 @@
 
 .feature-compani {
   flex: 1 1 calc(33% - 40px);
-  background-color: #a5c8ee;
+  background-color: #1054ae;
+  
   padding: 20px;
+  margin: 10px;
   border-radius: 10px;
   text-align: center;
+  box-sizing: border-box;
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+
+.feature-compani:hover {
+  transform: scale(1.1); /* Ajusta el valor según lo necesario */
 }
 
 .feature .material-icons {
@@ -24,7 +35,7 @@
   margin-bottom: 10px;
 }
 .feature-compani span {
-  color: #1054ae;
+  color: #ecebee;
   font-size: 40px;
   margin-bottom: 10px;
 }

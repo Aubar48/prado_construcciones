@@ -13,9 +13,11 @@
   width: 200px;
   margin: 20px;
   border-radius: 0px 40px 40px 40px;
+
 }
 .feature img{
   transform: scaleX(-1);
+  filter: drop-shadow(5px 5px 10px #2e2e2f);
 
 }
 
