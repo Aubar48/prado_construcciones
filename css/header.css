@@ -12,7 +12,7 @@ header {
 }
 
 .logo_img {
-  width: 120px;
+  width: 200px;
   height: auto;
 }
 /* Estilo para el menú */
@@ -36,6 +36,7 @@ header {
   position: relative;
   padding: 10px 30px;
   display: inline-block;
+  font-size: 2rem;
 }
 
 /*efecto button menu*/

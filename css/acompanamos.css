@@ -1,9 +1,12 @@
 /* Acompañamos */
 .acompanamos {
-  padding: 50px 20px;
+  padding: 20px 20px;
   text-align: center;
 }
-
+.acompanamos h2,
+.acompanamos p {
+font-size: 1.8rem;
+}
 .features-container {
   display: flex;
   overflow: hidden;
@@ -23,6 +26,7 @@
   box-sizing: border-box;
   transform-origin: center;
   transition: transform 0.5s ease;
+  height: 300px;
 }
 
 
@@ -36,7 +40,7 @@
 }
 .feature-compani span {
   color: #ecebee;
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 /* Sobre nosotros */
@@ -45,8 +49,13 @@
   background-color: var(--background);
   text-align: center;
 }
+.feature-compani h3{
+  font-size: 1.8rem;
+  color: #ecebee;
 
-#about p {
-  font-size: 1.1rem;
+}
+.feature-compani p {
+  font-size: 1.6rem;
+  color: #ecebee;
   margin-bottom: 20px;
 }
