@@ -1,39 +1,39 @@
 /* Estilos para el contenedor */
 .form-container {
   display: flex;
-  align-items: stretch; /* Asegura que tanto la imagen como el formulario tengan la misma altura */
+  flex-direction: column; /* Cambia la dirección de los elementos para que se apilen */
+  align-items: center;
   max-width: 1900px;
   margin: 0 auto;
   height: 100%; /* Ocupa el 100% de la altura disponible */
   filter: drop-shadow(1px 1px 5px #2e2e2f);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
 /* Estilo para la imagen */
 .form-image {
-  flex: 0 0 40%; /* La imagen ocupa el 40% del ancho */
   position: relative; /* Necesario para posicionar el párrafo sobre la imagen */
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* La imagen ocupa el 100% del ancho */
   overflow: hidden; /* Asegura que la imagen no se desborde */
+  border-radius: 8px;
 }
 
 .form-image img {
-  width: 100%;
-  height: 100%;
-  top: 20%;
+  width: 70%; /* Imagen ocupa el ancho completo */
+  height: auto; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Mantiene la relación de aspecto de la imagen dentro del contenedor */
   border-radius: 8px;
 }
-.form-image span {
-  color: #1054ae;
-  font-size: 80px;
-}
+
 /* Párrafo sobre la imagen */
 .image-text {
   position: absolute; /* Posiciona el párrafo sobre la imagen */
-  top: 10%; /* Ajusta la distancia desde la parte superior */
-  left: 40%;
+  top: 45%; /* Ajusta la distancia desde la parte superior */
+  left: 50%;
   transform: translateX(-50%); /* Centra el párrafo horizontalmente */
   padding: 10px;
   border-radius: 8px;
@@ -41,24 +41,22 @@
   font-size: 3rem;
   font-weight: 800;
 }
-.form-image p{
-    font-size: 1.8rem;
-
-}
 
 /* Estilo para el formulario */
 .form-content {
-  flex: 0 0 60%; /* El formulario ocupa el 60% del ancho */
-  background-color: #f4f4f4;
+  width: 100%; /* El formulario ocupa todo el ancho debajo de la imagen */
   padding: 40px; /* Aumenta el espacio interno (padding) para darle más espacio al contenido */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
   transition: max-width 0.3s ease;
 }
-.form-content h2{
-    font-size: 2.5rem;
-    font-weight: 700;
+
+.form-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004aad;
+  filter: drop-shadow(1px 1px 5px #2e2e2f);
 }
 
 /* Ajustes de los inputs y botones */

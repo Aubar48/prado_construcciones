@@ -151,6 +151,16 @@
     flex: 0 0 50%; /* El formulario ocupará el 50% del ancho */
     padding: 30px; /* Ajusta el padding para que el contenido se vea bien en tabletas */
   }
+  .box__footer .logo img{
+    width: 250px;
+  }
+  .box__footer .terms{
+    max-width: 300px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 25px;
+  }
 }
 
 /* Para pantallas grandes (más de 992px) */

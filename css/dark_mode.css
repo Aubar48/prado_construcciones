@@ -8,7 +8,8 @@ body.noche .mobile-menu ul li a,
 body.noche .menu,
 body.noche .menu ul a,
 body.noche .feature h4,
-body.noche .feature-compani h3 {
+body.noche .feature-compani h3,
+body.noche .form-content h2 {
   color: #f5f5f5;
 }
 body.noche .line,
@@ -19,7 +20,9 @@ body.noche .service-card img,
 body.noche .service-card iframe,
 body.noche .project-item iframe,
 body.noche #contact iframe,
-body.noche .form-container {
+body.noche .hero-content h1,
+body.noche .form-content h2,
+body.noche .feature_Bienvenida span {
   filter: drop-shadow(1px 1px 5px #ecebee);
 }
 
@@ -52,6 +55,4 @@ body.noche footer {
   color: #f5f5f5;
   background-color: #2e2e2e;
 }
-body.noche #contact form h2 {
-  color: black;
-}
+
