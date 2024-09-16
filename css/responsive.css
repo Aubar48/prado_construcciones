@@ -68,7 +68,7 @@
 
   .form-image {
     flex: 0 0 auto; /* La imagen no ocupará un ancho fijo */
-    height: 200px; /* Ajusta la altura de la imagen para que sea más pequeña en móviles */
+    height: auto; /* Ajusta la altura de la imagen para que sea más pequeña en móviles */
     position: relative; /* Mantiene el posicionamiento del párrafo */
   }
   .image-text {

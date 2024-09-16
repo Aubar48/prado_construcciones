@@ -8,7 +8,7 @@
   width: 100%;
   height: auto; /* Cambia la altura para que sea automática */
   object-fit: cover;
-  max-height: 600px;
+  max-height: 700px;
   filter: drop-shadow(1px 1px 5px #2e2e2f);
   border-radius: 10px;
 }

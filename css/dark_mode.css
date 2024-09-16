@@ -22,16 +22,19 @@ body.noche .project-item iframe,
 body.noche #contact iframe,
 body.noche .hero-content h1,
 body.noche .form-content h2,
-body.noche .feature_Bienvenida span {
+body.noche .feature_Bienvenida span ,
+body.noche .acompanamos_p{
   filter: drop-shadow(1px 1px 5px #ecebee);
 }
 
 body.noche .logo_img,
 body.noche .slider,
 body.noche .menu ul a,
-body.noche .menu ul a {
+body.noche .menu ul a,
+body.noche #contact h2 span {
   filter: drop-shadow(1px 1px 5px #ecebee);
 }
+
 
 body.noche .feature-compani {
   background-color: #333333;

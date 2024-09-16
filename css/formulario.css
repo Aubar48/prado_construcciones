@@ -10,6 +10,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
+#contact h2 span{
+  color: #004aad;
+  filter: drop-shadow(1px 1px 5px #2e2e2f);
+  font-weight: 700;
+}
 
 /* Estilo para la imagen */
 .form-image {
@@ -32,13 +37,13 @@
 /* Párrafo sobre la imagen */
 .image-text {
   position: absolute; /* Posiciona el párrafo sobre la imagen */
-  top: 45%; /* Ajusta la distancia desde la parte superior */
+  top: 65%; /* Ajusta la distancia desde la parte superior */
   left: 50%;
-  transform: translateX(-50%); /* Centra el párrafo horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el párrafo horizontal y verticalmente */
   padding: 10px;
+  font-size: 2rem; /* Ajusta el tamaño del texto según lo necesario */
   border-radius: 8px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 3rem;
   font-weight: 800;
 }
 

@@ -3,6 +3,16 @@
   padding: 50px 20px;
   text-align: center;
 }
+.acompanamos h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.acompanamos_p {
+  color: #004aad;
+  font-weight: 600;
+  font-size: 1.8rem;
+  filter: drop-shadow(1px 1px 5px #2e2e2f);
+}
 
 .features-container {
   display: flex;
@@ -22,23 +32,19 @@
   text-align: center;
   box-sizing: border-box;
   transform-origin: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease; /* Reducido el tiempo de transición */
 }
-
 
 .feature-compani:hover {
-  transform: scale(1.1); /* Ajusta el valor según lo necesario */
+  transform: scale(1.05); /* Ajustado el valor para evitar el sobrepaso */
 }
 
-.feature .material-icons {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
 .feature-compani span {
   color: #ecebee;
   font-size: 40px;
   margin-bottom: 10px;
 }
+
 /* Sobre nosotros */
 #about {
   padding: 50px 20px;
