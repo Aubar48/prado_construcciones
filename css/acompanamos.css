@@ -24,7 +24,7 @@
 
 .feature-compani {
   flex: 1 1 calc(33% - 40px);
-  background-color: #1054ae;
+  background-color: #437eca;
   filter: drop-shadow(1px 1px 5px #2e2e2f);
   padding: 20px;
   margin: 10px;
@@ -38,7 +38,11 @@
 .feature-compani:hover {
   transform: scale(1.05); /* Ajustado el valor para evitar el sobrepaso */
 }
+.feature-compani p{
+  font-size: 1rem;
+  font-weight: 500;
 
+}
 .feature-compani span {
   color: #ecebee;
   font-size: 40px;

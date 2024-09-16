@@ -6,6 +6,16 @@
   justify-content: space-around;
   gap: 20px;
 }
+#projects h2{
+  font-weight: 600;
+  font-size: 2rem;
+}
+#projects h2 span{
+  color:#004AAD ;
+  filter: drop-shadow(1px 1px 5px #2e2e2f);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
 
 .service-card,
 .project-item {

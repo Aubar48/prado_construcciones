@@ -8,11 +8,10 @@ header {
   display: flex;
   align-items: center;
   color: #343f44;
-  font-size: 25px;
 }
 
 .logo_img {
-  width: 120px;
+  width: 160px;
   height: auto;
 }
 /* Estilo para el menú */
@@ -36,6 +35,9 @@ header {
   position: relative;
   padding: 10px 30px;
   display: inline-block;
+  font-size: 1.4rem;
+  filter: drop-shadow(1px 1px 5px #2e2e2f);
+
 }
 
 /*efecto button menu*/

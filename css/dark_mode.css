@@ -23,7 +23,8 @@ body.noche #contact iframe,
 body.noche .hero-content h1,
 body.noche .form-content h2,
 body.noche .feature_Bienvenida span ,
-body.noche .acompanamos_p{
+body.noche .acompanamos_p,
+body.noche #projects h2 span{
   filter: drop-shadow(1px 1px 5px #ecebee);
 }
 
