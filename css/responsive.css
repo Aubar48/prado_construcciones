@@ -41,9 +41,14 @@ font-size: 1.2rem;
   color: #1054ae;
   font-size: 60px;
 }
-.form-image p{
-  font-size: 0.8rem;
 
+.form-image p{
+  font-size: 0.9rem;
+
+}
+.form-content h2{
+  font-size: 1.4rem;
+  font-weight: 700;
 }
   .features {
     display: flex;
@@ -120,7 +125,10 @@ font-size: 1.2rem;
   #hero img {
     max-height: 400px;
   }
-
+  
+  .form-image p{
+    font-size: 1.4rem;
+  }
   .features {
     display: flex;
     justify-content: space-around;
@@ -177,6 +185,23 @@ font-size: 1.2rem;
 
 /* Para pantallas grandes (más de 992px) */
 @media only screen and (min-width: 992px) {
+  
+  .menu ul a {   
+    font-size: 1.4rem;
+  }
+  .acompanamos h2,
+.acompanamos p {
+font-size: 1.6rem;
+}
+.feature-compani h3{
+  font-size: 1.3rem;
+
+
+}
+.feature-compani p {
+  font-size: 1.1rem;
+
+}
   .features {
     display: flex;
     justify-content: space-around;
@@ -215,6 +240,9 @@ font-size: 1.2rem;
 
   .form-image {
     flex: 0 0 40%; /* La imagen ocupará el 40% del ancho */
+  }
+  .form-image p{
+    font-size: 1.4rem;
   }
   .image-text {
     font-size: 1.1rem;
