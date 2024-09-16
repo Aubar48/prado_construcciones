@@ -45,7 +45,6 @@ font-size: 1.8rem;
 }
 /* Sobre nosotros */
 #about {
-  padding: 50px 20px;
   background-color: var(--background);
   text-align: center;
 }

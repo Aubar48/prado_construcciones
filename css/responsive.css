@@ -23,6 +23,28 @@
     margin-bottom: 20px;
   }
 
+  .acompanamos h2,
+.acompanamos p {
+font-size: 1.2rem;
+}
+.feature-compani h3{
+  font-size: 1.2rem;
+  color: #ecebee;
+
+}
+.feature-compani p {
+  font-size: 1.1rem;
+  color: #ecebee;
+  margin-bottom: 20px;
+}
+.form-image span {
+  color: #1054ae;
+  font-size: 60px;
+}
+.form-image p{
+  font-size: 0.8rem;
+
+}
   .features {
     display: flex;
     flex-direction: column;

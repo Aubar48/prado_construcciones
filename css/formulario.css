@@ -6,7 +6,6 @@
   margin: 0 auto;
   height: 100%; /* Ocupa el 100% de la altura disponible */
   filter: drop-shadow(1px 1px 5px #2e2e2f);
-  margin-top: 20px;
 }
 
 /* Estilo para la imagen */
