@@ -38,3 +38,18 @@
   color: #1054ae;
   filter: drop-shadow(1px 1px 5px #2e2e2f); 
 }
+.text_center_feature{
+text-align: center;
+}
+.flex_feature{
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  gap: 20px;
+}
+.flex_feature_service{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 20px;
+}

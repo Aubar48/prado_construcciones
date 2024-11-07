@@ -82,6 +82,9 @@
     flex: 0 0 auto; /* El formulario no ocupará un ancho fijo */
     padding: 20px; /* Reduce el padding para que el formulario se ajuste mejor */
   }
+  .flex_feature{
+    flex-direction: column;
+  }
 }
 
 /* Para pantallas medianas (tablets) */
