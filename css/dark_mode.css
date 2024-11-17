@@ -25,7 +25,7 @@ body.noche .form-content h2,
 body.noche .feature_Bienvenida span ,
 body.noche .acompanamos_p,
 body.noche #projects h2 span{
-  filter: drop-shadow(1px 1px 5px #ecebee);
+  filter: drop-shadow(1px 1px 0px #ecebee);
 }
 
 body.noche .logo_img,

@@ -36,7 +36,9 @@
 }
 .feature_Bienvenida span{
   color: #1054ae;
-  filter: drop-shadow(1px 1px 5px #2e2e2f); 
+  filter: drop-shadow(1px 1px 0px #2e2e2f); 
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 .text_center_feature{
 text-align: center;
@@ -52,4 +54,9 @@ text-align: center;
   height: 100%;
   flex-direction: column;
   gap: 20px;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
 }

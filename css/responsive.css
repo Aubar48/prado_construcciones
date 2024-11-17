@@ -1,5 +1,6 @@
 /* Para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 600px) {
+  
   .wrapper {
     width: 100%;
     padding: 0px;
@@ -18,7 +19,7 @@
   }
   .hero-content h1,
   .hero-content p {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -51,8 +52,11 @@
     margin-bottom: 10px;
   }
   .feature p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+  .feature_Bienvenida span{
+   font-size: 26px;
   }
   .box__footer a .fab {
     font-size: 40px;
@@ -129,6 +133,7 @@
     font-size: 20px;
     line-height: 1.8;
   }
+  
   #contact iframe {
     width: 100%;
     max-width: 100%;

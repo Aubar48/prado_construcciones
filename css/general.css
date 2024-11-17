@@ -9,11 +9,11 @@ a {
 }
 body,
 html {
-  font-family: "Arial", sans-serif;
+  font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif;
   background-color: var(--background);
   color: var(--text);
   scroll-behavior: smooth;
-  line-height: 1.6;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 

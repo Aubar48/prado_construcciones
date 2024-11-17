@@ -9,16 +9,23 @@
   filter: drop-shadow(1px 1px 5px #2e2e2f);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
+
+  font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif;
+
 }
 #contact h2 {
   font-weight: 600;
   font-size: 2rem;
+  font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif;
+
 }
 #contact h2 span {
   color: #004aad;
   filter: drop-shadow(1px 1px 5px #2e2e2f);
   font-weight: 600;
   font-size: 1.8rem;
+  font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif;
+
 }
 
 /* Estilo para la imagen */
@@ -51,7 +58,7 @@
   padding: 10px;
   font-size: 2rem; /* Ajusta el tamaño del texto según lo necesario */
   border-radius: 8px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif;
   font-weight: 800;
 }
 
@@ -61,7 +68,7 @@
   padding: 40px; /* Aumenta el espacio interno (padding) para darle más espacio al contenido */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: "Arial", sans-serif;
+  font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif;
   transition: max-width 0.3s ease;
 }
 
