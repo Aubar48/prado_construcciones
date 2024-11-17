@@ -16,7 +16,9 @@ html {
   line-height: 1.8;
   overflow-x: hidden;
 }
-
+li{
+  list-style-type: none;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
